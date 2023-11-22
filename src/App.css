@@ -1,38 +1,470 @@
-.App {
+body{
+  padding:0;
+  margin:0;
+  
+}
+
+/* Login/Signup */
+.cont{
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  display: flex;
   min-height: 100vh;
+  align-items:center;
+  justify-content: center;
+  color: rgba(43, 42, 42, 0.733);
+  /* padding-right: 7%; */
+  /* background-image: linear-gradient(79deg, #7439db, #C66FBC 48%, #F7944D); */
+  background-color: #ffffff;
+}
+
+.signcontainer, .login-form, .register-form{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* background-color: #ffffff; */
+  
+  
+}
+
+@media screen and (min-width: 600px) {
+  .signcontainer {
+      padding: 3rem;  
+      padding-left: 4rem;  
+      padding-right: 4rem;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+     margin: 0.5rem; 
+  }
+}
+
+.signcontainer input{
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border: 1px solid rgb(83, 83, 83);
+  border-radius: 10px;
+}
+
+.signcontainer input[type=submit]{
+  border: 1px solid rgb(83, 83, 83);
+}
+
+
+/* End of Login/Signup */
+/* Homepage */
+
+.homepagenavbar {
+  width: 100%;
+  background-color:rgb(255, 255, 253);
+  padding:0px;
+  margin: 0;
+  overflow: hidden; 
+  display: flex; 
+  justify-content:space-between;
+}
+
+
+
+.homepagenavbar li a{
+  margin-right: 20px;
+  color: rgb(92, 73, 73);
+  text-decoration: none;
+  padding: 15px 30px;
+  display:block;
+  text-align: right;
+  
+  
+  
+}
+
+.homepagenavbar a:hover{
+  background-color:aliceblue;
+  border-radius: 9px;
+}
+
+.homepagenavbar li{
+  float: left;
+}
+
+.homepageloginblock1 p{
+  font-size: 30px;
+  font-style: italic;
+position: absolute;
+left: 58%;
+top: 153%;
+}
+
+.homepageorganizer p{
+  font-size: 30px;
+  font-style: italic;
+position: absolute;
+left: 10%; 
+top: 260%;
+}
+
+button, input[type=submit] {
+  appearance: none;
+  background-color: transparent;
+  border: 0.125em solid #1A1A1A;
+  border-radius: 0.9375em;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 3.75em;
+  min-width: 0;
+  outline: none;
+  padding: 1em 2.3em;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+ }
+ 
+ button:disabled, input[type=submit]:disabled {
+  pointer-events: none;
+ }
+ 
+ button:hover, input[type=submit]:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+ }
+ 
+ button:active {
+  box-shadow: none;
+  transform: translateY(0);
+ } 
+
+ #homepagebooknow{
+  position: absolute;
+  left: 67%; 
+  top: 177%;
+}
+
+#homepagebooknow2{
+  position: absolute;
+  left: 17%; 
+  top: 282%;
+}
+
+
+.homepageorganizer img{
+  border-radius: 10px;
+}
+/* end of Homepage */
+/* orghome */
+
+.orghomesidenav{
+    display: flex;
+    /* min-height: 100px; */
+     /* align-items:center;   */
+     justify-content: center;
+  
+}
+
+.orghomeforform {
+  background-color: #EFDECD;
+  color: #3D2B1F;
+}
+
+.orghomeforform:hover {
+  background-color: #A67B5B;
+  
+}
+
+.orghomesidenav button{
+  background-color: #EFDECD; 
+      color: #3D2B1F;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-right: 20px;
+      margin-bottom: 30px;
+}
+
+.orghomesidenav button:hover{
+  background-color: #A67B5B;
+}
+
+.orghomecontainer button{
+  background-color: #EFDECD; 
+      color: #3D2B1F;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-right: 20px;
+      margin-bottom: 30px;
+}
+
+.orghomecontainer button:hover{
+  background-color: #A67B5B;
+}
+
+.orghomecontainer{
+  display: flex;
+  /* min-height: 100px; */
+   /* align-items:center;   */
+   justify-content: center;
+   padding: 20px;
+   margin: 20px;
+}
+
+
+/* end of orghome */
+
+/*  orgnewevent */
+#imglogo{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+ }
+
+ .orgneweventhref{
+  font-style: italic;
+  color: #3D2B1F;
+  text-align:center;
+}
+
+.orgneweventforform {
+  background-color: #EFDECD;
+  color: #3D2B1F;
+}
+
+.orgneweventforform:hover {
+  background-color: #A67B5B;
+  
+}
+
+#eventname,#venue,#price,#capacity,#booked,#aboutevent{
+  background-color: #EFDECD;
+}
+
+#eventname:hover,#venue:hover,#price:hover,#capacity:hover,#booked:hover,#aboutevent:hover{
+  background-color: #A67B5B;
+}
+
+.orgneweventsidenav button{
+  background-color: #EFDECD; 
+      color: #3D2B1F;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-right: 20px;
+      margin-bottom: 30px;
+}
+
+.orgneweventsidenav button:hover{
+  background-color: #A67B5B;
+}
+
+.orgneweventsidenav{
+  display: flex;
+  /* min-height: 100px; */
+   /* align-items:center;   */
+   justify-content: center;
+}
+
+.letscenter{
+  padding-left: 667px;
+}
+
+
+ 
+
+
+
+/* end orgnewevent */
+
+input {
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+} 
+
+/* button {
+  border: none;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #7439db;
+} */
+
+/* .link-btn {
+  background: none;
   color: white;
+  text-decoration: underline;
+} */
+
+/* .sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+} */
+
+/* Sidebar links */
+/* .sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+} */
+
+/* Active/current link */
+/* .sidebar a.active {
+  background-color: #04AA6D;
+  color: white;
+} */
+
+/* Links on mouse-over */
+/* .sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+} */
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+ div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}  
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+/* @media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;} 
+*/
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+/* @media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+} */
+/* #mySidenav a {
+  position: absolute;
+  left: -80px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #EFDECD;
+  border-radius: 0 5px 5px 0;
+  background-color: #EFDECD;
+} */
+
+/* #mySidenav a:hover {
+    left: 0;
+    color: #3D2B1F;
+  } */
+
+
+  .container{
+    margin-left:180px;
+  } 
+
+
+  .dropbtn {
+    background-color: #EFDECD;
+    color: #3D2B1F;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .dropbtn:hover{
+    background-color: #A67B5B;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+   .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  } 
+  
+
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  .dropdown:hover .dropdown-content {display: block;}
+  .dropdown:hover .dropbtn {background-color: #A67B5B;} 
+
+label{
+  display: inline-block;
+  width: 300px; 
 }
 
-.App-link {
-  color: #61dafb;
+#footer{
+  padding-top: 45%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer{
+  background-color: #3B3B3B;
+  width: 100%;
+  padding:0px;
+  margin: 0;
+  overflow: hidden; 
+  display: flex; 
+  justify-content:space-between;
 }
+
+  footer ul{
+    list-style-type:none;
+  }
+ 
+  footer li {
+    margin-right: 20px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 15px 30px;
+    display:block;
+    text-align: right;
+    
+    
+    
+  }
+
+
+
